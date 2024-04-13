@@ -9,19 +9,19 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "25393663")
+    API_HASH = os.environ.get("API_HASH", "46fb840e6cb4b84d582c44ebbf703251")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6475149749:AAGhpFVqusR_QAuP3My5Kb29rY_cJmDLFBg") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Rkn_RenameBot")     
-    DB_URL = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Yogi")     
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/9dc402f2ba612e3f6dfbf.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB = os.environ.get("FORCE_SUB", "-1001819787652") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", None))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '5324568283').split()]
+    FORCE_SUB = os.environ.get("FORCE_SUB", "-1002104000021") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002056010418"))
 
     # wes response configuration     
     PORT = int(os.environ.get("PORT", "8080"))
